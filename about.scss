@@ -1,0 +1,41 @@
+$accent: #D78398;
+$dark: #212121;
+$light: #F9F8F1;
+$grey: #CBCFD4;
+$light-grey: #F4F4F4;
+$dark-grey: #8D8D8D;
+$important: #D84D33;
+
+.a-text{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.text{
+    text-align: center;
+    font-size: 20px;
+}
+.question{
+    text-align: justify;
+    font-size: 18;
+    font-weight: bold;
+}
+.a-line{
+    border-bottom: 1px solid #D78398;
+    margin-top: 20px;
+    max-width: 300px;
+    margin: auto;
+}
+.a-item{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16;
+    font-weight: bold;
+}
+.a-link{
+    color:$dark;
+    text-decoration: none;
+}

@@ -1,10 +1,13 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daddy</title>
+    <title>MainPage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -19,16 +22,16 @@
             <header class="header">
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a class="nav-link" href="mg.html">Мужские группы</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gg.html">Женские группы</a></li>
-                        <li class="nav-item"><a class="nav-link" href="solo.html">Соло исполнители</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mg.php">Мужские группы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gg.php">Женские группы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="solo.php">Соло исполнители</a></li>
                     </ul>
                 </nav>
                 <img src="img/moonsunsmall.png" alt="Logo">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="">О нас</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Отзывы</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Личный кабинет</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.php">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.php">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cabinet.php">Личный кабинет</a></li>
                 </ul>
                 <div class="cart">
                     <span class="cart-count">5</span>
@@ -43,16 +46,9 @@
                 </div>
             </div>
 
-            <div class="wrap">
-                <div class="wrapper">
-                    <div class="search">
-                      <input type="text" class="searchTerm" placeholder="Введите исполнителя или название альбома">
-                      <button type="submit" class="searchButton">
-                      <i class="fa fa-search"></i>
-                      </button>
-                    </div>
-                </div>
-            </div>
+            <?php
+            require_once "search.php";
+            ?>
         
             <div class="page">
                 <div class="wrapper">
@@ -60,7 +56,9 @@
 
                 <div class="latest-releases">
                 <div class="release">
+                    <a href="album.php">
                     <img src="img/bambi.jpg" alt="Release">
+                    </a>
                     <p class="release-title">BAEKHYUN - Bambi</p>
                     <p class="release-price">86.90 BYN</p>
                 </div>
@@ -145,12 +143,9 @@
                     <img src="img/moonsunsmall.png" alt="logo">
                     <h2 class="logo-title">The MoonSun Store</h2>
                 </div>
-
             </footer>
         </div>
     </div>
-
-
 
 </body>
 </html>

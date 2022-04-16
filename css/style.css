@@ -170,4 +170,20 @@ img {
   text-align: center;
   margin: auto;
 }
+
+.otz{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.alb_name{
+  text-align: center;
+}
+
+form{
+  width: 500px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
